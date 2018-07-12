@@ -1,7 +1,7 @@
 /**
  * \file
  *
- * \brief Empty user application template
+ * \brief Using the USART module to display a message
  *
  */
 
