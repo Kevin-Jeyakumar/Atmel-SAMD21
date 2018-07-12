@@ -72,8 +72,6 @@ void configure_usart_callbacks(void)
 	usart_enable_callback(&usart_instance, USART_CALLBACK_BUFFER_RECEIVED);
 }
 
-
-
 int main (void)
 {
 	system_init();
@@ -84,7 +82,7 @@ int main (void)
 	configure_usart_callbacks();
 	
 	system_interrupt_enable_global();
-	uint8_t string[] = "Hi Kevin\r\n";
+	uint8_t string[] = "Hi Kev\r\n";
 	while (true) {
 		usart_write_buffer_wait(&usart_instance, string, sizeof(string));
 		delay_cycles_ms(500);
